@@ -1,7 +1,6 @@
 
 /**
  * @brief All possible action types a player may execute. (Priority action) indicates this action must be executed if the player has the ability; the rest are ignored. Actions are listed in order of priority.
- * NO_OPERATION: Do nothing
  * INITIAL_PLACE_BUILDING: (Priority action) Start of the game only, place a building.
  * INITIAL_PLACE_ROAD: (Priority action) Start of the game only, place a road.
  * TRASH_CARD: (Priority action). Trash a card.
@@ -17,9 +16,9 @@
  * PLAY_DEV_CARD: Play a development card, only 1 per turn.
  * TRADE_WITH_PLAYER: Initial a trade with another player.
  * END_TURN. End the turn.
+ * NO_OPERATION: Do nothing
  */
 static enum ActionType{
-                    NO_OPERATION,
                     INITIAL_PLACE_BUILDING,
                     INITIAL_PLACE_ROAD,
                     TRASH_CARD,
@@ -36,4 +35,5 @@ static enum ActionType{
                     PLAY_DEV_CARD,
                     TRADE_WITH_PLAYER,
                     END_TURN,
+                    NO_OPERATION
                 };
