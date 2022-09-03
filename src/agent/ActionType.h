@@ -8,11 +8,15 @@
  * PLACE_SETTLEMENT: (Priority action) Place a purchased settlement
  * PLACE_ROAD: (Priority action) Place a purchased road.
  * ROLL: (Prority action) Roll the dice.
+ * MOVE_ROBBER (Priority action) Move the robber to a new location
  * ACCEPT_TRADE/DENY_TRADE: (Priority action) 
  * PURCHASE_RESOURCE: Purchase a resource from the bank (4:1), or use a discounted port if available
  * PURCHASE_SETTLEMENT: Purchase a settlement
  * UPGRADE_SETTLEMENT: Upgrade a settlement to a city
  * PURCHASE_DEV_CARD: Purchase a development card
+ * PLAY_DEV_CARD: Play a development card, only 1 per turn.
+ * TRADE_WITH_PLAYER: Initial a trade with another player.
+ * END_TURN. End the turn.
  */
 static enum ActionType{
                     NO_OPERATION,
@@ -22,6 +26,7 @@ static enum ActionType{
                     PLACE_SETTLEMENT,
                     PLACE_ROAD,
                     ROLL,
+                    MOVE_ROBBER,
                     ACCEPT_TRADE,
                     DENY_TRADE,
                     PURHCASE_RESOURCE,
@@ -29,7 +34,6 @@ static enum ActionType{
                     UPGRADE_SETTLEMENT,
                     PURCHASE_DEV_CARD,
                     PLAY_DEV_CARD,
-                    MOVE_ROBBER,
                     TRADE_WITH_PLAYER,
                     END_TURN,
                 };
