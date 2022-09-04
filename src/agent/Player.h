@@ -8,12 +8,30 @@ class Player{
 
     private:
         /** Player attributes **/
+        
+        /// @brief Player index
         int playerNum;
 
+        /// @brief Player has access to (3 same:1 any) type harbor
+        bool hasAnyHarbor;
+
+        /// @brief Player has access to (2 brick:1 any) type harbor
+        bool hasBrickHarbor;
+
+        /// @brief Player has access to (2 lumber:1 any) type harbor
+        bool hasLumberHarbor;
+
+        /// @brief Player has access to (2 ore:1 any) type harbor
+        bool hasOreHarbor;
+
+        /// @brief Player has access to (2 grain:1 any) type harbor
+        bool hasGrainHarbor;
+
+        /// @brief Player has access to (2 wool:1 any) type harbor
+        bool hasWoolHarbor;
 
 
         /** Player cards **/
-
         // Resources
         /// @brief Number of Brick cards the player owns
         int numBrickCards;
@@ -80,6 +98,13 @@ class Player{
 
 
         /** Getters **/
+        inline constexpr int hasAnyHarbor(){return this->hasAnyHarbor; };
+        inline constexpr int hasBrickHarbor(){return this->hasBrickHarbor; };
+        inline constexpr int hasLumberHarbor(){return this->hasLumberHarbor; };
+        inline constexpr int hasOreHarbor(){return this->hasOreHarbor; };
+        inline constexpr int hasGrainHarbor(){return this->hasGrainHarbor; };
+        inline constexpr int hasWoolHarbor(){return this->hasWoolHarbor; };
+
         inline constexpr int getNumBrickCards(){return this->numBrickCards; };
         inline constexpr int getNumLumberCards(){return this->numLumberCards; };
         inline constexpr int getNumOreCards(){return this->numOreCards; };
@@ -102,6 +127,13 @@ class Player{
 
 
         /** Setters **/
+        inline void setHasAnyHarbor(boolean _hasAnyHarbor){this->hasAnyHarbor = _hasAnyHarbor; };
+        inline void setHasBrickHarbor(boolean _hasBrickHarbor){this->hasBrickHarbor = _hasBrickHarbor; };
+        inline void setHasLumberHarbor(boolean _hasLumberHarbor){this->hasLumberHarbor = _hasLumberHarbor; };
+        inline void setHasOreHarbor(boolean _hasOreHarbor){this->hasOreHarbor = _hasOreHarbor; };
+        inline void setHasGrainHarbor(boolean _hasGrainHarbor){this->hasGrainHarbor = _hasGrainHarbor; };
+        inline void setHasWoolHarbor(boolean _hasWoolHarbor){this->hasWoolHarbor = _hasWoolHarbor; };
+        
         inline void setNumBrickCards(int _numBrickCards){this->numBrickCards = _numBrickCards; };
         inline void setNumLumberCards(int _numLumberCards){this->numLumberCards = _numLumberCards; };
         inline void setNumOreCards(int _numOreCards){this->numOreCards = _numOreCards; };

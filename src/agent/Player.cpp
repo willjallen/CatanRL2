@@ -2,6 +2,14 @@
 
 Player::Player(int _playerNum) : playerNum(_playerNum) {
 
+    // Player attributes
+    this->hasAnyHarbor = false;
+    this->hasBrickHarbor = false;
+    this->hasLumberHarbor = false;
+    this->hasOreHarbor = false;
+    this->hasGrainHarbor = false;
+    this->hasWoolHarbor = false;
+
     // Init resource card values
     this->numBrickCards = 0;
     this->numLumberCards = 0;
