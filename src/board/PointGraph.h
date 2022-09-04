@@ -4,8 +4,8 @@ namespace Constants {
     /// @brief Maximum number of neighbors a point can have
     const int MAX_NEIGHBORS = 3;
     
-    /// @brief An array representing the indices of the neighbors for each point, accessed by point index. -1 denotes no neighbor.
-    const int pointAssociations[64][3] = 
+    /// @brief An array representing the indices of the neighbors for each point, accessed by point index. (-1 denotes no neighbor).
+    const int pointAssociations[54][3] = 
     {
         {-1,1,8}, // 0
         {-1,0,2}, // 1
@@ -60,6 +60,13 @@ namespace Constants {
         {-1,49,51}, // 50
         {43,50,52}, // 51
         {-1,51,53}, // 52
-        {-1,52,45}, // 53
+        {-1,52,45}  // 53
     };
+
+    /// @brief An array representing the indeces of the connected tile for each point, accessed by point index. (-1 denotes no neighbor)
+    const int pointTileAssociations[54][3] = 
+    {
+        {}
+    };
+
 }
